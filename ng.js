@@ -78,7 +78,7 @@ class Player extends Rect
 {
     constructor()
     {
-        super(20, 10);
+        super(20, 100);
         this.vel = new Vec;
         this.score = 0;
 
