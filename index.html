@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PolyX Medical Services</title>
+    <link rel="stylesheet" type="text/css" href="universal.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button class="dropbtn">Log In</button>
+        <div class="dropdown-content">
+            <a href="login.html">Log In</a>
+            <a href="https://docs.google.com/forms/d/1Y6hGgPA7FIotZCl5RYhCjwqT8egKZD_6l9FgEYSIi5U/edit">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+            <button class="dropbtn">Rate a Doctor</button>
+            <div class="dropdown-content">
+                <a href="azlist.html">A-Z List</a>
+                <a href="searchdoctors.html">Search Doctors</a>
+            </div>
+    </div>
+
+    <div class="dropdown">
+            <button class="dropbtn">Community</button>
+            <div class="dropdown-content">
+                <a href="forum.html">Forums</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+    </div>
+
+
+    <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="contact.html">Contact Us</a>
+                <a href="staff.html">Our Staff</a>
+            </div>
+    </div>
+
+
+            
+        <body>
+            
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="doctors.jpg" style="width:100%">
+            <img class="mySlides" src="doctor.png" style="width:100%">
+            <img class="mySlides" src="happy.jpg" style="width:100%">
+        </div>
+            
+        <script>
+        var myIndex = 0;
+        carousel();
+            
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 1800); // Change image every 2 seconds
+        }
+        </script>
+            
+        </body>
+
+        <h2 class="w3-center">Some of our Happy Customers and Doctors</h2>
+
+
+
+
+
+    <p> Aren't you sick of driving to your local hospital and paying large fees just to wait in a long line to the doctor's office? 
+        Well, with PolyX, you don't have to wait anymore! Simply order a doctor through the "Schedule a Doctor" menu. With inexpensive costs and feasibility, doctor appointments have never been easier. Click <a href="faq.html">here</a> to learn more! 
+        Are you new? Click here to <a href="signin.html">sign in</a>. Already a member? <a href="login.html">login</a></p>
+</body>
+
+</html>
